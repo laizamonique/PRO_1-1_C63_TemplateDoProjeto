@@ -22,9 +22,9 @@ export default class HomeScreen extends Component{
     //url = "https://rupinwhitehatjr.github.io/dictionary/searchKeyword.json"
     //url = "https://rupinwhitehatjr.github.io/dictionary/"+ +".json"
     //url = "https://rupinwhitehatjr.github.io/dictionary/"+searchKeyword+".json"
-    //url = "https://rupinwhitehatjr.github.io/dictionary/"+word+".json"
+    url = "https://rupinwhitehatjr.github.io/dictionary/"+word+".json"
 
-    //API traduzida (contém 5 palavras: aplicativo, aprendizado, escola, linguagem e professora)
+    API traduzida (contém 5 palavras: aplicativo, aprendizado, escola, linguagem e professora)
     //url = "https://thiagosaraiva-git.github.io/dictionary-master/"+word+".json"
     
     return fetch(url)
@@ -120,7 +120,7 @@ export default class HomeScreen extends Component{
             }}
           /> 
         */}
-        {/*
+        {
             <TextInput
               style={styles.inputBox}
               onChangeText={text => {
@@ -134,8 +134,8 @@ export default class HomeScreen extends Component{
                 });
               }}
               value={this.state.text}
-            />
-            */}
+            >
+            }
             <TouchableOpacity
               style={styles.searchButton}
               onPress={() => {
